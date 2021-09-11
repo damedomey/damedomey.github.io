@@ -1,0 +1,39 @@
+:root{
+  --primary: rgb(45, 152, 245);
+  --secondary: rgb(0, 21, 249);
+  --blue: blue;
+  --green: rgb(150, 223, 150);
+}
+
+.carre {
+  min-width: 30px;
+  min-height: 30px;
+  background-color: var(--primary);
+  margin: 1px;
+}
+
+.rectangle {
+  min-width: 70px;
+  min-height: 30px;
+  background-color: var(--primary);
+  margin: 1px;
+}
+
+.transform-left{
+  position:relative;
+  background-color: rgb(120, 51, 216);
+}
+.transform-left::before{
+  position: absolute;
+  content: ' ';
+  width: 0;
+  height: 0;
+  right: -50px;
+  border-style: solid;
+  border-width: 30px 0 0 50px;
+  border-color: transparent transparent transparent rgb(120, 51, 216);
+}
+.transform-right{
+  background-color: rgb(148, 148, 148);
+}
+
